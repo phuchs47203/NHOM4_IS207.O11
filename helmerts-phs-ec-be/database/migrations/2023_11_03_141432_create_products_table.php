@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('brand');
             $table->string('imgurl');
+            $table->string('color');
+            $table->string('design_by');
             $table->string('description');
             $table->bigInteger('origional_price');
             $table->bigInteger('sale_price');
