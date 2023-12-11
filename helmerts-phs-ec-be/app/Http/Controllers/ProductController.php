@@ -297,4 +297,8 @@ class ProductController extends Controller
 
         return Product::destroy($id);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 173b84d58423b63ae21ec8c4eb1b9f6cd43d48ad
