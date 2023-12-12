@@ -1,0 +1,236 @@
+.hermerts-app-oneproduct {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+.hermerts-app-oneproduct-head {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.hermerts-app-oneproduct-head_image {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hermerts-app-oneproduct-head_image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.hermerts-app-oneproduct-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-gap: 0.5rem;
+    height: 100%;
+}
+
+.hermerts-app-oneproduct-description h3,
+.hermerts-app-oneproduct-description-price p {
+    font-family: var(--font-family);
+    color: var(--color-p);
+}
+
+.hermerts-app-oneproduct-description-price {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-gap: 0rem;
+}
+
+
+
+.hermerts-app-one_product-details {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 10;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    grid-gap: 0.2rem;
+    overflow-y: scroll;
+}
+
+.hermerts-app-one_product-details_svg {
+
+    width: 100%;
+    display: flex;
+}
+
+.hermerts-app-one_product-details_svg svg {
+    color: var(--color-h);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hermerts-app-one_product-details_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    grid-gap: 2rem;
+}
+
+.hermerts-app-one_product-details_main-description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hermerts-app-oneproduct-description h1 {
+    font-size: 18px;
+    line-height: 24px;
+    color: #444;
+    font-family: var(--font-family);
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+
+}
+
+.hermerts-app-oneproduct-description p {
+    font-family: var(--font-family3);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--color-p);
+    word-spacing: -0.1rem;
+}
+
+.hermerts-app-oneproduct-description-price p:last-child {
+    color: rgb(188, 38, 51);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.hermerts-app-one_product-details_main-description_box {
+    background: rgb(255, 255, 255);
+    max-width: 450px;
+    max-height: 800px;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hermerts-app-one_product-details_main-description_box p {
+    color: var(--color-p);
+}
+
+.hermerts-app-one_product-details_main-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.hermerts-app-one_product-details_main-img img {
+    max-width: 800px;
+    max-height: 800px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 990px) {
+    .hermerts-app-one_product-details_main {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .hermerts-app-one_product-details_main-img {
+        height: 40%;
+    }
+
+    .hermerts-app-one_product-details_main-img img {
+        max-width: none;
+        max-height: none;
+
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hermerts-app-one_product-details_main-description {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .hermerts-app-oneproduct-description h1 {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .hermerts-app-oneproduct-description p {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .hermerts-app-oneproduct-description h1 {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        letter-spacing: -0.06rem;
+    }
+
+    .hermerts-app-oneproduct-description p {
+        font-weight: 300;
+    }
+
+    .hermerts-app-oneproduct-description {
+        grid-gap: 0.3rem;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .hermerts-app-oneproduct-description-price p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .hermerts-app-oneproduct-description p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .hermerts-app-oneproduct-description-price {
+        grid-gap: 0.5rem;
+        flex-direction: row;
+    }
+
+    .hermerts-app-oneproduct-description-price p:last-child {
+        font-weight: 400;
+        font-size: 12px;
+        /* display: none; */
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {}
