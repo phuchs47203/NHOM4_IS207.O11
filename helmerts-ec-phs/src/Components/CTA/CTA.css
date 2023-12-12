@@ -1,0 +1,158 @@
+.app-helmerts-cta {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--gradient-bg-cta);
+    margin: 0rem 25rem;
+}
+
+.app-helmerts-cta-header h1 {
+    font-family: var(--font-family);
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-h1);
+    margin-bottom: 0.3rem;
+    /* letter-spacing: -0.04rem; */
+}
+
+
+.app-helmerts-cta-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+
+}
+
+.app-helmerts-cta-content input {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: var(--color-p);
+    margin-right: 0.5rem;
+    background: transparent;
+    border-bottom: 0.5px solid black;
+    border-radius: none;
+}
+
+.app-helmerts-cta-content svg {
+    width: 30px;
+    height: 30px;
+    color: var(--color-icon);
+    cursor: pointer;
+}
+
+
+.error-message {
+    font-family: var(--font-family);
+    color: var(--color-p);
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 0.2rem;
+    color: rgb(237, 84, 41);
+    word-spacing: -0.2rem;
+}
+
+.success-message {
+    font-family: var(--font-family);
+    color: var(--color-p);
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 0.2rem;
+    color: rgb(43, 175, 14);
+    word-spacing: -0.2rem;
+}
+
+@media screen and (max-width: 1650px) {
+
+    .app-helmerts-cta {
+        margin: 0rem 15rem;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    .app-helmerts-cta-header h1 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .app-helmerts-cta {
+        margin: 0rem 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .app-helmerts-cta-header h1 {
+        font-size: 16px;
+        line-height: 26px;
+        word-spacing: -0.2rem;
+    }
+
+
+
+    .app-helmerts-cta {
+        margin: 0rem;
+        padding: 1.5rem 0.5rem;
+
+    }
+
+    .app-helmerts-cta-content {
+        width: 300px;
+    }
+
+    .app-helmerts-cta-content input {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0.2rem;
+
+    }
+
+    .app-helmerts-cta-content svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .app-helmerts-cta-header h1 {
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+
+    .app-helmerts-cta-content {
+        width: 250px;
+    }
+
+    .app-helmerts-cta-content input {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .app-helmerts-cta-content svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+
+    .app-helmerts-cta-content {
+        width: fit-content;
+    }
+}
