@@ -10,5 +10,4 @@ export { default as Account } from './Account/Account';
 export { default as Category } from './Category/Category';
 export { default as ClientService } from './ClientService/ClientService';
 export { default as ProductFilter } from './ProductFilter/ProductFilter';
-
-
+export { default as ChatBotOpenAI } from './ChatBotOpenAI/ChatBotOpenAI';
